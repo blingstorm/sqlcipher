@@ -190,7 +190,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"$(OPENSSL_SRC)/include",
-					"$(SRCROOT)/../openssl-xcode/include",
+					$PROJECT_TEMP_DIR/../openssl.build/openssl/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = (
@@ -211,7 +211,7 @@
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = (
 					"$(OPENSSL_SRC)/include",
-					"$(SRCROOT)/../openssl-xcode/include",
+					$PROJECT_TEMP_DIR/../openssl.build/openssl/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = (
