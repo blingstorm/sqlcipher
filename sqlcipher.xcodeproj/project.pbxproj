@@ -192,6 +192,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OPENSSL_SRC)/include",
 					$PROJECT_TEMP_DIR/../openssl.build/openssl/include,
+					"\"$PROJECT_DIR/../include\"",
 				);
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = (
@@ -222,6 +223,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OPENSSL_SRC)/include",
 					$PROJECT_TEMP_DIR/../openssl.build/openssl/include,
+					"\"$PROJECT_DIR/../include\"",
 				);
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = (
@@ -269,7 +271,6 @@
 		1DEB91F108733DB70010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = NO;
 				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
 					armv7,
@@ -281,6 +282,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = "$(PLATFORM_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator macosx iphoneos";
